@@ -5,3 +5,33 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do 
+  blog = Blog.create!(
+    title: Faker::Game.title, 
+    body: Faker::Hipster.paragraph,
+  )
+end
+
+puts "10 blog post ceated"
+
+5.times do 
+  skill = Skill.create!(
+    title: Faker::ProgrammingLanguage.name,
+   precent_utilized: Faker::Number.within(range: 1..100),
+  )
+end
+
+puts "5 skills created"
+
+9.times do 
+  portfolio_item = Portfolio.create!(
+    title: Faker::Job.title,
+    subtitle: Faker::Job.field,
+    body:  Faker::Hipster.paragraph,
+    main_image: Faker::Avatar.image(slug: "my-main-avatar#{portfolio_item}", size: "600x400"),
+    thumb_image: Faker::Avatar.image(slug: "my-thumb-avatar#{portfolio_item}", size: "350x200"),
+  )
+end
+
+puts "9 portfolio created"
