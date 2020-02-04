@@ -38,6 +38,9 @@ class PortfoliosController < ApplicationController
       end
     end
 
+    def show
+    end
+
   
   private
   
