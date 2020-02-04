@@ -39,8 +39,6 @@ class PortfoliosController < ApplicationController
     end
 
   
-
-
   private
   
     def set_portfolio
