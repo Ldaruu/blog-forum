@@ -54,3 +54,11 @@ end
 end
 
 puts "9 portfolio created"
+
+3.times do
+  technology = Portfolio.last.technologies.create!(
+    name: Faker::ProgrammingLanguage.name,
+  )
+end
+
+puts "3 technologies created"
