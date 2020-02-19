@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/Ldaruu/test_view_tool
+  revision: ae7d3245d382f339a1021fd20817f538a10ebe36
+  specs:
+    laszlo_test_view_tool (0.1.0)
+
+GIT
   remote: https://github.com/faker-ruby/faker.git
   revision: 4a0d6c54a8bf9929f6d816631cf749cc019cb13f
   branch: master
@@ -220,6 +226,7 @@ DEPENDENCIES
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.7)
   jquery-rails
+  laszlo_test_view_tool!
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)

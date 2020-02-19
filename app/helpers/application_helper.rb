@@ -14,4 +14,8 @@ module ApplicationHelper
      content_tag(:p , greeting, class: "source-greeting-#{layout_name}")
     end 
   end
+
+  def copyright_generator
+    LaszloTestViewTool::Render.copyright 'Laszlo Daru', 'All right reserved'
+  end
 end

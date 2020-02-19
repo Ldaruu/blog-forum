@@ -50,3 +50,5 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
+
+gem 'laszlo_test_view_tool', git: 'https://github.com/Ldaruu/test_view_tool'
