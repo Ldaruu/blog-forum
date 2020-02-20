@@ -126,6 +126,8 @@ GEM
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    petergate (2.0.1)
+      activerecord (> 4.0.0)
     pg (1.2.2)
     popper_js (1.16.0)
     puma (4.3.1)
@@ -228,6 +230,7 @@ DEPENDENCIES
   jquery-rails
   laszlo_test_view_tool!
   listen (>= 3.0.5, < 3.2)
+  petergate (~> 2.0, >= 2.0.1)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.1)
