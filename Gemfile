@@ -51,5 +51,7 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'kaminari', '~> 1.2'
 
 gem 'laszlo_test_view_tool', git: 'https://github.com/Ldaruu/test_view_tool'

@@ -15,15 +15,7 @@
 
     <%=  render 'shared/blog_nav' %>
       
-      <!-- Blog Header -->
-       <div class="blog-header">
-          <div class="container">
-            <h1 class="blog-title">My Story</h1>
-            <p class="lead blog-description">My Journey To Become A Software Developer </p>
-            <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
-          </div>
-        </div>
-      <!-- End Header -->
+      <%= render 'shared/blog_masthead'%>
 
       <!-- Start of Container & raw element -->
       <div class="container">
@@ -36,14 +28,8 @@
           
         </div>
 
-          <!--Start of Footer -->
-          <footer class="blog-footer">
-            <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            <p>
-              <a href="#">Back to top</a>
-            </p>
-          </footer>
-          <!--End of Footer -->
+        <%= render 'shared/blog_footer' %>
+          
 
           <%= source_helper("blog") %>
       </div>
