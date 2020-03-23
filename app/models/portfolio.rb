@@ -10,6 +10,10 @@ class Portfolio < ApplicationRecord
     where(subtitle: 'React')
   end
 
+  def self.by_position
+    ordered("position ASC")
+  end
+
   scope :advertising, -> { where(subtitle: 'Advertising') }
 
   after_initialize :set_defaults
