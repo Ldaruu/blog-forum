@@ -163,6 +163,14 @@ body {
 
 /* Custom styles*/
 
+.site-wrapper {
+  background-color:#343334 ;
+  color: #FFF;
+}
+
+.inner-cover {
+  text-align: center;
+}
 .card-block {
   color:#3b3e42;
   text-align: left;
@@ -188,4 +196,9 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+}
+
+.app-nav span{
+  margin-left: 15px;
+  margin-right: 15px;
 }
