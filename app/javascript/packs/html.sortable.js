@@ -1,5 +1,3 @@
-alert('Hellooo');
-
 /*
  * HTML5Sortable package
  * https://github.com/lukasoppermann/html5sortable

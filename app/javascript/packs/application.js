@@ -6,6 +6,8 @@
 require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
+require("packs/html.sortable") 
+require("packs/portfolios.coffee")
 
 require("jquery")
 require("jquery-ui")
@@ -14,6 +16,7 @@ require("jquery-ui")
 $(function(){
   $('.sortable').sortable();
 });
+
 require("turbolinks").start()
 
 import 'bootstrap'

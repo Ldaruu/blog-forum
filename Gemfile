@@ -56,3 +56,4 @@ gem 'kaminari', '~> 1.2'
 
 gem 'laszlo_test_view_tool', git: 'https://github.com/Ldaruu/test_view_tool'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'coffee-rails'
