@@ -55,3 +55,4 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'kaminari', '~> 1.2'
 
 gem 'laszlo_test_view_tool', git: 'https://github.com/Ldaruu/test_view_tool'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
