@@ -38,8 +38,8 @@ puts "5 skills created"
     title: Faker::Job.title,
     subtitle: Faker::Job.field,
     body:  Faker::Hipster.paragraph,
-    main_image: "http://placehold.it/600x400",
-    thumb_image: "http://placehold.it/350x200"
+    main_image: Faker::Avatar.image(slug: "my-main-avatar#{portfolio_item}", size: "600x400"),
+    thumb_image: Faker::Avatar.image(slug: "my-thumb-avatar#{portfolio_item}", size: "350x200"),
   )
 end
 
@@ -48,8 +48,8 @@ end
     title: Faker::Job.title,
     subtitle: "React",
     body:  Faker::Hipster.paragraph,
-    main_image: "http://placehold.it/600x400",
-    thumb_image: "http://placehold.it/350x200"
+    main_image: Faker::Avatar.image(slug: "my-main-avatar#{portfolio_item}", size: "600x400"),
+    thumb_image: Faker::Avatar.image(slug: "my-thumb-avatar#{portfolio_item}", size: "350x200"),
   )
 end
 
