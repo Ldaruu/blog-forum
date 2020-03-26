@@ -8,7 +8,6 @@ require("@rails/activestorage").start()
 require("channels")
 require("packs/html.sortable") 
 require("packs/portfolios.coffee")
-
 require("jquery")
 require("jquery-ui")
 
@@ -21,6 +20,7 @@ require("turbolinks").start()
 
 import 'bootstrap'
 import './src/application.scss'
+import 'cocoon-js';
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
