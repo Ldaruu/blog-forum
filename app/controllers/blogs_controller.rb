@@ -36,7 +36,8 @@ class BlogsController < ApplicationController
         format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
+        flash.now[:notice] = @blog.errors.full_messages
+        format.json { render json: @blog.errors, status: :unprocessable_entity, errors: @blog.errors }
       end
     end
   end

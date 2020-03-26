@@ -31,7 +31,7 @@ class PortfoliosController < ApplicationController
         format.html { redirect_to portfolios_path, notice: 'Portfolio Item was successfully created.' }
         format.json { render :index, status: :created, location: @portfolio_item }
       else
-        format.html { render :new }
+        format.html { render :new,  notice: @portfolio_item.errors }
         format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
       end
     end
