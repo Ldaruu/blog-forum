@@ -39,6 +39,7 @@ body {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  overflow-y: scroll;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -67,6 +68,7 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
+  z-index: 2000;
 }
 
 .masthead-brand {
@@ -124,6 +126,7 @@ body {
 
 .mastfoot {
   color: rgba(255,255,255,.5);
+  z-index: 2000;
 }
 
 
@@ -169,6 +172,7 @@ body {
 }
 
 .inner-cover {
+  margin: 66px 0;
   text-align: center;
 }
 .card-block {
@@ -220,4 +224,32 @@ body {
 
 .app-footer {
   color:#FFF;
+}
+
+.tech-news {
+  color: #121212;
+  margin:20px;
+}
+
+.tech-news a{
+  color: #058daf;
+  margin:0 10px;
+}
+
+.tech-news a:hover{
+  color: #058daf;
+  text-decoration: underline;
+}
+.tech-news .card {
+  display: flex;
+ padding: 30px;
+}
+.tech-news .card  p{
+  margin-bottom: 0;
+}
+
+.tech-news .card .user-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
 }
