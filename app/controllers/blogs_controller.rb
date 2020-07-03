@@ -7,13 +7,14 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.page(params[:page]).per(5)
-    @page_title = "My Blog"
+    @page_title = "Laszlo's personal Blog"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
     @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
