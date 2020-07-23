@@ -2,7 +2,7 @@ ready = undefined
 set_positions = undefined
 
 set_positions = ->
-  $('.card').each (i) ->
+  $('.card-top').each (i) ->
     $(this).attr 'data-pos', i + 1
     return
   return
