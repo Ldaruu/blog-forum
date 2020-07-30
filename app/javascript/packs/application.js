@@ -10,6 +10,7 @@ require("packs/html.sortable")
 require("packs/portfolios.coffee")
 require("jquery")
 require("jquery-ui")
+//= require cable
 
 
 $(() =>{
