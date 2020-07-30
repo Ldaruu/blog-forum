@@ -9,7 +9,7 @@ $(document).on('turbolinks:load', function () {
   let comments = $('#comments');
 
   if (comments.length > 0) {
-    App.global_chat = consumer.subscriptions.create({channel: "BlogChannel", blog_id: comments.data('blog-id')}, {
+    App.global_chat = consumer.subscriptions.create({channel: "BlogsChannel", blog_id: comments.data('blog-id')}, {
       connected() {
         // Called when the subscription is ready for use on the server
       },
