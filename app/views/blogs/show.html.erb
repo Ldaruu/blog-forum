@@ -8,7 +8,7 @@
   <%= link_to 'Back', blogs_path if logged_in?(:site_admin) %>
 
  <p>
-   <%= @blog.body %>
+   <%= markdown(@blog.body) %>
  </p>
 
   <%= render 'comments/comment_form' %>
