@@ -47,10 +47,12 @@ padding-top: 30px;
 
 .portfolio-thumb-image {
   padding: 5px;
-  width: 350px;
-  height: 200px;
+  max-width: 350px;
+  max-height: 200px;
 }
 
 .card-top {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
