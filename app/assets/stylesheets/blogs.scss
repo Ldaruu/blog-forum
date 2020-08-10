@@ -194,3 +194,19 @@ h6, .h6 {
 .comment-name {
   font-weight: 600;
 }
+
+.blog-breadcrumb {
+  margin-left: auto;
+  font-size: 1.25em;
+}
+.blog-breadcrumb a {
+  margin: 0 10px 0 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #9e988a;
+}
+.blog-sidebar-source {
+  margin-top: 24px;
+}

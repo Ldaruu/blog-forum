@@ -2,7 +2,8 @@
   <div class="container">
     <h1 class="blog-title">My Story</h1>
     <p class="lead blog-description">My Journey To Become A Software Developer </p>
-    <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <span><%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %></span>
+    <span><%= link_to 'Topics', topics_path %></span>
   </div>
 </div>
    

@@ -9,6 +9,7 @@
     <%= csp_meta_tag %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
+    <%= favicon_link_tag 'favicon/favicon.ico'%>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -32,11 +33,8 @@
           <%= yield %>
 
           <%= render "shared/application_footer"%>
-
-          <%= source_helper("application") %>
           
           <%= render "shared/alerts" %>
-
 
         </div>
       </div>

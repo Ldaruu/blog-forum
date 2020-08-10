@@ -1,11 +1,74 @@
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "profile.jpg", width:300, alt:"Profile Pic"%>
-  </div>
-  <div class="col-md-8 about-text">
-    <h1>About Me</h1>
-    <p>A confident and smartly presented individual with excellent communication and interpersonal 
-    skills and valuable IT knowledge - Java, Spring, JavaScript, React.js, Ruby, Ruby on Rails 
-    </p>
+<div class="app-card-container">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-5">
+        <%= image_tag "profile.jpg", width:300, alt:"Profile Pic", class:'profile-pic'%>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h5><%= skill.title %></h5>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-secondary"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.precent_utilized %>"  
+                  aria-valuemax="100"
+                  style="width: <%= skill.precent_utilized%>%"
+                >
+
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-7 about-text">
+        <h1>About Me</h1>
+        <p>A confident and smartly presented individual with excellent communication and interpersonal 
+        skills and valuable IT knowledge - Java, Spring, JavaScript, React.js, Ruby, Ruby on Rails 
+        </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobs"
+            aria-expanded="fase"
+            aria-controler="jobs"
+          >
+            Job Historry
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="fase"
+            aria-controler="education"
+          >
+           Education
+          </button>
+        </p>
+        <p>
+          <div class="collapse" id="jobs">
+            <div class="card card-block" >
+               IT-technician for Assistive Solutions
+            </div>
+            <div class="card card-block" >
+               IT-technician for Assistive Solutions
+            </div>
+          </div>
+          <div class="collapse" id="education">
+            <div class="card card-block" >
+              GDF Computer Sinece
+            </div>
+            <div class="card card-block" >
+               GreenFox Academy software-developer
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
