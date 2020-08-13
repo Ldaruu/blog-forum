@@ -22,6 +22,8 @@ require("turbolinks").start()
 import 'bootstrap'
 import './src/application.scss'
 import 'cocoon-js';
+import '../lib/typed'
+import '../lib/typed-implement'
 import './alerts'
 
 // Uncomment to copy all static images under ../images to the output folder and reference
